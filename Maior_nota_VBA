@@ -1,0 +1,13 @@
+Sub exercicio()
+    Dim notas(9) As Single
+    Dim i As Integer, maios As Integer
+    For i = 0 To 9
+        notas(i) = InputBox("Digite mas nota")
+    Next
+    maior = notas(0)
+    For i = 1 To 9
+        If notas(i) > maior Then maior = notas(i)
+    Next
+    MsgBox "maior valor" & maior
+    
+End Sub
